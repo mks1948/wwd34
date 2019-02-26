@@ -1,0 +1,94 @@
+
+@media (max-width:780px) and (min-width: 319px)
+{
+  .nav{
+    height: 60px;
+  }
+  .nav_menu {
+    flex-direction:column;
+    display: none;
+  }
+  .menu_item{
+    display: none
+  }
+  .nav_menu__left{
+    display: none;
+  }
+
+.hamburgler{
+  position: relative;
+  top:15px;
+  left: 15px;
+	width: 30px;
+	height: 30px;
+	display: block;
+	transition: .3s ease all;
+	.no-hamburgler{
+		transform: rotate(-45deg);
+	}
+}
+
+.bun,
+.meat{
+	display: block;
+	width: 100%;
+	background: $dark;
+	height: 20%;
+	transition: .3s ease all;
+	border-radius: $radius;
+}
+
+.top{
+	 .no-hamburgler & {
+		height: 38%;
+		width: 20%;
+		margin-left: 40%;
+		border-radius: $radius $radius 0 0;
+	}
+}
+
+.bottom{
+	.no-hamburgler & {
+		height: 38%;
+		width: 20%;
+		margin-left: 40%;
+		border-radius: 0 0 $radius $radius;
+	}
+}
+
+.meat{
+	margin: 20% 0;
+	.no-hamburgler &{
+		margin: 2% 0;
+	}
+}
+  //DOMAIN SECTION;
+  #domain{
+    // height: 100vh;
+    
+    
+    .domain-atributes{
+      font-size: 1.6em;
+      color:black;
+      top: 15%; 
+    }
+    .domain-button{
+      font-size:2em;
+      top:55%;
+      input{
+        width: 100%;
+      }  
+    }
+  }
+}
+@media only screen and (min-width: 780px) and (max-width:1240px)
+{
+  .nav{
+    .nav_menu__left{
+      padding:0;
+    }
+  }
+}
+ 
+  
+    
